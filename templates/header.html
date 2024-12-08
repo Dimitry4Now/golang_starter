@@ -1,0 +1,29 @@
+{{define "header"}}
+<header class="bg-teal-600 text-white py-6 shadow-lg">
+    <div class="container mx-auto flex justify-between items-center">
+        <h1 class="text-4xl font-semibold">{{.HeaderTitle}}</h1>
+        <nav>
+            <ul class="flex space-x-6 text-lg items-center">
+                <li><a href="/" class="hover:text-teal-200">{{.Home}}</a></li>
+                <li><a href="/about" class="hover:text-teal-200">{{.About}}</a></li>
+                <li><a href="/contact" class="hover:text-teal-200">{{.Contact}}</a></li>
+                <!-- Login link with added style -->
+                <li><a href="/loginForm" class="hover:text-teal-200 text-yellow-400 font-semibold">{{.Login}}</a></li>
+                <li> 
+                    <!-- Flag for English -->
+                    <a href="/change-language?lang=en" class="p-2">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg" alt="English" class="w-8 h-8 rounded-full">
+                    </a>
+                </li>
+                <li>
+                    <!-- Flag for Macedonian -->
+                    <a href="/change-language?lang=mk"  class="p-2">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/79/Flag_of_North_Macedonia.svg" alt="Macedonian" class="w-8 h-8 rounded-full">
+                    </a>
+                </li>        
+            </ul>
+        </nav>
+    </div>
+</header>
+{{end}}
+

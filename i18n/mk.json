@@ -1,0 +1,17 @@
+{
+    "login_title": "Најава",
+    "username_label": "Корисничко име",
+    "password_label": "Лозинка",
+    "login_button": "Најави се",
+    "create_account": "Немаш кориснички профил? Креирај тука",
+    "header_title": "Име на Проектот",
+    "landing_title": "Во фаза на изработка!",
+    "landing_message": "Работиме напорно...",
+    "home": "Почетна",
+    "about": "За Нас",
+    "contact": "Контакт",
+    "footer_copyright": "2024 Мојата апликација. Сите права се задржани.",
+    "footer_privacy_policy": "Политика на приватност",
+    "footer_terms_service": "Услови за користење"
+}
+

@@ -1,0 +1,17 @@
+{
+    "login_title": "Login",
+    "username_label": "Username",
+    "password_label": "Password",
+    "login_button": "Login",
+    "create_account": "You don't have an account? Create one",
+    "header_title": "Project Name",
+    "landing_title": "Coming Soon!",
+    "landing_message": "In progress...",
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact",
+    "footer_copyright": "2024 My Application. All rights reserved.",
+    "footer_privacy_policy": "Privacy Policy",
+    "footer_terms_service": "Terms of Service"
+}
+
