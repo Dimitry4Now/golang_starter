@@ -1,0 +1,47 @@
+ :root {
+    view-transition-name: page;
+}
+
+/* A bit more complicated one */
+/*
+html {
+  animation: fade-out-in 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@keyframes fade-out-in {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  40% {
+    opacity: 0; 
+    transform: scale(0.98);
+  }
+  60% {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  100% {
+    opacity: 1; 
+    transform: scale(1);
+  }
+}
+*/
+/* A simple one */
+
+html {
+  animation: fade-out-in 0.4s ease-in-out;
+}
+
+@keyframes fade-out-in {
+  0% {
+    opacity: 1; /* Fully visible */
+  }
+  50% {
+    opacity: 0; /* Fully faded out */
+  }
+  100% {
+    opacity: 1; /* Fully visible again */
+  }
+}
+

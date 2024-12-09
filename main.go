@@ -11,6 +11,9 @@ import (
 )
 
 func main() {
+	fs := http.FileServer(http.Dir("static"))
+	http.Handle("/static/", http.StripPrefix("/static/", fs))
+
 	handlers.Bundle = i18n.NewBundle(language.English)
     handlers.Bundle.RegisterUnmarshalFunc("json", json.Unmarshal)
     handlers.Bundle.MustLoadMessageFile("i18n/en.json")
@@ -26,6 +29,8 @@ func main() {
 	http.HandleFunc("/login", handlers.LoginHandler)
 	http.HandleFunc("/loginForm", handlers.RedirectHandler)
 	http.HandleFunc("/change-language", handlers.ChangeLanguageHandler)
-
+	http.HandleFunc("/about", handlers.AboutUsHandler)
+	http.HandleFunc("/contact", handlers.ContactHandler)
+	
 	log.Fatal(http.ListenAndServe(":8000", nil))
 }
