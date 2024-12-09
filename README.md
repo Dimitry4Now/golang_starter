@@ -1,12 +1,18 @@
-## Go Starter Project
+# Go Starter Project
 
-So this is a starter project for website using Golang combined with HTMX and Tailwind CSS. Extremely lightweight stack, and it is completely Hypermedia driven.
+This is a starter project for a website using **Golang**, **HTMX**, and **Tailwind CSS**. It's an extremely lightweight stack and is completely hypermedia-driven.
 
-## About the project
+---
 
-I've been planing on learning the Go programming language for a long time now, and i finally decided to do so. And what better way of learning than learning by doing. So i started this as a base for any future projects including this stack.
+## About the Project
 
-The basic file/folder/project structure is as follows:
+I've been planning on learning the Go programming language for a long time now, and I finally decided to do so. What better way to learn than by doing? I started this as a base for any future projects, including this one.
+
+---
+
+## File/Folder Structure
+
+```go
 
 ├── db
 │   └── db.go
@@ -37,17 +43,34 @@ The basic file/folder/project structure is as follows:
     ├── landing.html
     └── login.html
 
+```
 
-where everything is separated in order for it to be easily managed. In the db folder will be all the database configuration and the data migrations(not yet added but i'll update it as i go). 
+---
 
-The handlers, as the name suggest, are the handlers for all the individual "routings". The logic that loads and serves the html templates. The commons.go file contains all the common components that are used in all of the handlers(and for the localization, all across the application).
+### Folder Explanations
 
-In the folder named i18n are the configuration files for the localization(translation, multilanguage support) of the page. It has just English and Macedonian(my native) as options, just for demonstrating purposes. But feel free to add more as needed.
+- **`db/`**  
+  Contains all the database configurations and (eventually) data migrations. This is still a work in progress.
 
-The models folder will contain all the models for the database entities, but this is a very early stage of "the project" and i am still new to Golang, so i will be updating here as well as i learn.
+- **`handlers/`**  
+  Contains all the individual routing handlers. Each handler is responsible for loading and serving the HTML templates. A `common.go` file is included to hold shared logic or components used across multiple handlers.
 
-Static folder contains all the static files that will be needed throughout the whole application. For now contains only the .js and .css files, but it will eventually contain all the images and other stuff.
+- **`i18n/`**  
+  Holds the configuration files for localization (translation and multi-language support). Currently, it includes English and Macedonian (my native language) for demonstration purposes. Feel free to add more languages as needed.
 
-Under the templates folder, all the actual templates that are served to the client are stored. These are plain .html files, styled with tailwind CSS and use HTMX to send requests to Golang(the backend).
+- **`models/`**  
+  This folder is for database entity models. Since this project is in its early stages, this part will evolve as I continue to learn Go.
 
-Feel free t0 use this project and feel free to contribute if anything is missing for a bare bone starters Golang+HTMX web application.
+- **`static/`**  
+  Contains all static files used throughout the application, such as JavaScript and CSS. In the future, it will include images and other assets.
+
+- **`templates/`**  
+  Holds the HTML templates served to the client. These are styled using Tailwind CSS and leverage HTMX for sending requests to the Go backend.
+
+---
+
+### Contribution
+
+Feel free to use this project as a starting point for your own projects or contribute to improving this bare-bones Golang + HTMX web application starter.
+
+
