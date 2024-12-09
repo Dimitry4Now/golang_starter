@@ -6,7 +6,7 @@ This is a starter project for a website using **Golang**, **HTMX**, and **Tailwi
 
 ## About the Project
 
-I've been planning on learning the Go programming language for a long time now, and I finally decided to do so. What better way to learn than by doing? I started this as a base for any future projects, including this one.
+I've been planning on learning the Go programming language for a long time now, and I finally decided to do so. What better way to learn than by doing? I started this as a base for any future projects.
 
 ---
 
