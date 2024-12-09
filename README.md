@@ -47,7 +47,7 @@ I've been planning on learning the Go programming language for a long time now, 
 
 ---
 
-### Folder Explanations
+### File/Folder Explanations
 
 - **`db/`**  
   Contains all the database configurations and (eventually) data migrations. This is still a work in progress.
