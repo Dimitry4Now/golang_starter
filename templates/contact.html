@@ -4,32 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>{{.Project}}</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gradient-to-r from-teal-300 via-cyan-300 to-blue-300 h-screen flex flex-col">
     {{template "header" .}}
     <main class="container mx-auto px-4 py-12 flex-grow">
         <div class="max-w-2xl mx-auto bg-white shadow-lg rounded-lg p-8">
-            <h1 class="text-3xl font-bold text-center text-gray-900 mb-6">Contact Us</h1>
+            <h1 class="text-3xl font-bold text-center text-gray-900 mb-6">{{.ContactUs}}</h1>
 
             <form action="#" method="POST">
                 <!-- Subject Field -->
                 <div class="mb-4">
-                    <label for="subject" class="block text-lg font-medium text-gray-700">Subject</label>
-                    <input type="text" id="subject" name="subject" class="w-full p-3 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500" required placeholder="Enter the subject">
+                    <label for="subject" class="block text-lg font-medium text-gray-700">{{.Subject}}</label>
+                    <input type="text" id="subject" name="subject" class="w-full p-3 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500" required placeholder="{{.SubjectLabel}}">
                 </div>
 
                 <!-- Mail Content Field -->
                 <div class="mb-6">
-                    <label for="message" class="block text-lg font-medium text-gray-700">Message</label>
-                    <textarea id="message" name="message" rows="5" class="w-full p-3 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500" required placeholder="Write your message here"></textarea>
+                    <label for="message" class="block text-lg font-medium text-gray-700">{{.ContactMessage}}</label>
+                    <textarea id="message" name="message" rows="5" class="w-full p-3 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500" required placeholder="{{.ContactMessageLabel}}"></textarea>
                 </div>
 
                 <!-- Submit Button -->
                 <div class="text-center">
                     <button type="submit" class="w-full bg-teal-600 text-white py-3 rounded-md hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-400">
-                        Submit
+                        {{.Submit}}
                     </button>
                 </div>
             </form>

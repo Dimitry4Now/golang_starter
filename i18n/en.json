@@ -3,7 +3,8 @@
     "username_label": "Username",
     "password_label": "Password",
     "login_button": "Login",
-    "create_account": "You don't have an account? Create one",
+    "no_account": "You don't have an account?",
+    "create_here": "Create here",
     "header_title": "Project Name",
     "landing_title": "Coming Soon!",
     "landing_message": "In progress...",
@@ -12,6 +13,17 @@
     "contact": "Contact",
     "footer_copyright": "2024 My Application. All rights reserved.",
     "footer_privacy_policy": "Privacy Policy",
-    "footer_terms_service": "Terms of Service"
+    "footer_terms_service": "Terms of Service",
+    "project": "Go Starter",
+    "contact_us": "Contact",
+    "subject": "Subject",
+    "subject_label": "Enter the subject",
+    "submit": "Submit",
+    "contact_message": "Message",
+    "contact_message_label": "Enter your message",
+    "mission": "Our Mission",
+    "vision": "Our Vision",
+    "values": "Learn about our Values",
+    "team": "Meet the team"
 }
 

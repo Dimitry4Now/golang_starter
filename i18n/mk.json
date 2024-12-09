@@ -3,7 +3,8 @@
     "username_label": "Корисничко име",
     "password_label": "Лозинка",
     "login_button": "Најави се",
-    "create_account": "Немаш кориснички профил? Креирај тука",
+    "no_account": "Немаш кориснички профил?",
+    "create_here": "Креирај тука",
     "header_title": "Име на Проектот",
     "landing_title": "Во фаза на изработка!",
     "landing_message": "Работиме напорно...",
@@ -12,6 +13,17 @@
     "contact": "Контакт",
     "footer_copyright": "2024 Мојата апликација. Сите права се задржани.",
     "footer_privacy_policy": "Политика на приватност",
-    "footer_terms_service": "Услови за користење"
+    "footer_terms_service": "Услови за користење",
+    "project": "Go Основа",
+    "contact_us": "Контактирајте не",
+    "subject": "Наслов",
+    "subject_label": "Внеси наслов",
+    "submit": "Испрати",
+    "contact_message": "Порака",
+    "contact_message_label": "Внеси порака",
+    "mission": "Нашата мисија",
+    "vision": "Нашата Визија",
+    "values": "Научете за нашите Вредности",
+    "team": "Запознајте го тимот"
 }
 

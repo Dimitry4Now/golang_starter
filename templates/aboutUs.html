@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <title>{{.Project}}</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="/static/style.css">
     <script src="/static/script.js" defer></script>
@@ -15,7 +15,7 @@
     <main class="container mx-auto px-4 py-8">
         <!-- Our Mission Section -->
         <section class="mb-8 bg-white shadow rounded-lg p-6">
-            <h2 class="text-2xl font-bold text-gray-900 mb-4">Our Mission</h2>
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">{{.Mission}}</h2>
             <p class="text-gray-700 leading-relaxed">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a ex eu turpis suscipit sollicitudin. Nulla facilisi. Sed eget ligula ac nunc ultrices volutpat.
             </p>
@@ -23,7 +23,7 @@
 
         <!-- Our Vision Section -->
         <section class="mb-8 bg-white shadow rounded-lg p-6">
-            <h2 class="text-2xl font-bold text-gray-900 mb-4">Our Vision</h2>
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">{{.Vision}}</h2>
             <p class="text-gray-700 leading-relaxed">
                 Proin tincidunt, lorem at ultrices fermentum, felis quam vehicula sapien, vel dignissim libero velit non lorem. Integer id justo tincidunt, sodales libero et, molestie augue.
             </p>
@@ -31,7 +31,7 @@
 
         <!-- Our Values Section -->
         <section class="mb-8 bg-white shadow rounded-lg p-6">
-            <h2 class="text-2xl font-bold text-gray-900 mb-4">Our Values</h2>
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">{{.Values}}</h2>
             <ul class="list-disc pl-5 space-y-2">
                 <li class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
                 <li class="text-gray-700">Vestibulum venenatis, arcu a laoreet pulvinar, enim sapien porta lectus.</li>
@@ -41,7 +41,7 @@
 
         <!-- Meet the Team Section -->
         <section class="bg-white shadow rounded-lg p-6">
-            <h2 class="text-2xl font-bold text-gray-900 mb-4">Meet the Team</h2>
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">{{.Team}}</h2>
             <p class="text-gray-700 leading-relaxed">
                 Curabitur sed erat vel nisi sollicitudin venenatis. Morbi consequat, eros sit amet pharetra tincidunt, ligula mauris ullamcorper dolor, et vehicula nulla elit non nisl.
             </p>
