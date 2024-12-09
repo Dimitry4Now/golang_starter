@@ -67,6 +67,9 @@ I've been planning on learning the Go programming language for a long time now, 
 - **`templates/`**  
   Holds the HTML templates served to the client. These are styled using Tailwind CSS and leverage HTMX for sending requests to the Go backend.
 
+
+- **`main.go`**  
+  This is where everything comes together. The local http server is started and all the routes are handled, passing the functions from **`handlers/`**.
 ---
 
 ### Contribution
