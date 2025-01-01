@@ -1,16 +1,17 @@
 package main
 
 import (
-	"fmt"
-	"log"
 	"net/http"
 	"go_htmx_essentials/handlers"
 	"github.com/nicksnyder/go-i18n/v2/i18n"
 	"golang.org/x/text/language"
 	"encoding/json"
+	"go_htmx_essentials/logging"
 )
 
 func main() {
+	logging.InitLogger()
+
 	fs := http.FileServer(http.Dir("static"))
 	http.Handle("/static/", http.StripPrefix("/static/", fs))
 
@@ -23,7 +24,7 @@ func main() {
     	handlers.Localizer = i18n.NewLocalizer(handlers.Bundle, "en")
 	}
 
-	fmt.Println("Server Started Successfully...")
+	logging.Logger.Info("Server Started Successfully...")
 
 	http.HandleFunc("/", handlers.LandingHandler)
 	http.HandleFunc("/login", handlers.LoginHandler)
@@ -32,5 +33,5 @@ func main() {
 	http.HandleFunc("/about", handlers.AboutUsHandler)
 	http.HandleFunc("/contact", handlers.ContactHandler)
 	
-	log.Fatal(http.ListenAndServe(":8000", nil))
+	logging.Logger.Fatal(http.ListenAndServe(":8000", nil))
 }

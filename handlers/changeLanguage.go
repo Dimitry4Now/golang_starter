@@ -5,12 +5,14 @@ import (
 	"github.com/nicksnyder/go-i18n/v2/i18n"
 	"encoding/json"
 	"golang.org/x/text/language"
-	"log"
+	"go_htmx_essentials/logging"
 )
 
 
 // ChangeLanguageHandler changes the language based on the selected flag
 func ChangeLanguageHandler(w http.ResponseWriter, r *http.Request) {
+	logging.InitLogger()	
+
 	lang := r.URL.Query().Get("lang")
 	if lang == "" {
 		http.Error(w, "Language not specified", http.StatusBadRequest)
@@ -26,13 +28,8 @@ func ChangeLanguageHandler(w http.ResponseWriter, r *http.Request) {
 	// Update the global localizer with the new language
 	Localizer = i18n.NewLocalizer(Bundle, lang)
 
-    // Fetch localized strings
-    data := GetLocalizedData() 
-
 	// Debug
-	log.Printf("Inside changeLanguage.go")
-	log.Printf("Language selected: %s", lang)
-	log.Printf("Localized Title: %s", data["Title"])
+	logging.Logger.Info("Language selected: ", lang)
 	
 	// Redirect back to the referring page
 	referer := r.Header.Get("Referer")
