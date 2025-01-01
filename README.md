@@ -12,8 +12,8 @@ I've been planning on learning the Go programming language for a long time now, 
 
 ## File/Folder Structure
 
-```go
-
+```bash
+.
 ├── db
 │   └── db.go
 ├── go.mod
@@ -29,9 +29,12 @@ I've been planning on learning the Go programming language for a long time now, 
 ├── i18n
 │   ├── en.json
 │   └── mk.json
+├── logging
+│   └── logger.go
 ├── main.go
 ├── models
 │   └── user.go
+├── README.md
 ├── static
 │   ├── script.js
 │   └── style.css
@@ -42,6 +45,9 @@ I've been planning on learning the Go programming language for a long time now, 
     ├── header.html
     ├── landing.html
     └── login.html
+
+8 directories, 24 files
+
 
 ```
 
@@ -67,6 +73,8 @@ I've been planning on learning the Go programming language for a long time now, 
 - **`templates/`**  
   Holds the HTML templates served to the client. These are styled using Tailwind CSS and leverage HTMX for sending requests to the Go backend.
 
+- **`logging/`**  
+  Global logging module that can be used anywhere across the application.
 
 - **`main.go`**  
   This is where everything comes together. The local http server is started and all the routes are handled, passing the functions from **`handlers/`**.
